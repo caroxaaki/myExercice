@@ -1,4 +1,40 @@
-<div *ngIf="data">
-    <p>{{data[1].type}}</p><br>
-    <p>{{data[1].name}}</p>
-</div>    
+<table *ngIf="data">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <br>
+        <th>Type</th>
+        <!-- Ajoutez les noms des autres colonnes ici -->
+      </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngIf=" data ">
+        <p>{{ data[0].name }}
+            {{ data[0].type }}</p>
+    
+        <p>{{ data[2].name }}
+            <br>
+
+        <p>{{ data[3].name }}
+            <br>
+            
+        <p>{{ data[9].name }}
+            <br>
+        
+        <p>{{ data[4].name }}
+            <br>
+           
+        <p>{{ data[5].name }}
+            <br>
+       
+        <p>{{ data[6].name }}
+            <br>
+         
+        <p>{{ data[7].name }}
+           
+        <p>{{ data[8].name }}
+        <!-- Ajoutez les autres propriétés ici en fonction de vos données -->
+      </tr> 
+    </tbody>
+  </table>

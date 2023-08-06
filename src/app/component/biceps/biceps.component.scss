@@ -1,0 +1,24 @@
+$table-bg-color: #f2f2f2;
+$table-header-bg-color: #333333;
+$table-header-color: #ffffff;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $table-bg-color;
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  th {
+    background-color: $table-header-bg-color;
+    color: $table-header-color;
+  }
+  
+  tr:nth-child(even) {
+    background-color: lighten($table-bg-color, 10%);
+  }
+}
