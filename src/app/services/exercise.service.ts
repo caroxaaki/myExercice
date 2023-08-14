@@ -19,7 +19,4 @@ getExercises(){
 
   return this.http.get('https://api.api-ninjas.com/v1/exercises?muscle=biceps', {headers:data})
 }
- 
 }
-
-

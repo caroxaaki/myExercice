@@ -1,40 +1,61 @@
-<table *ngIf="data">
+<table>
     <thead>
       <tr>
-        <th>Name</th>
-        <br>
-        <th>Type</th>
-        <!-- Ajoutez les noms des autres colonnes ici -->
+        <th>NAME</th>
+        <th>TYPE</th>
+        <th>MUSCLE</th>
       </tr>
     </thead>
     <tbody>
-
-    <tr *ngIf=" data ">
-        <p>{{ data[0].name }}
-            {{ data[0].type }}</p>
-    
-        <p>{{ data[2].name }}
-            <br>
-
-        <p>{{ data[3].name }}
-            <br>
-            
-        <p>{{ data[9].name }}
-            <br>
-        
-        <p>{{ data[4].name }}
-            <br>
-           
-        <p>{{ data[5].name }}
-            <br>
-       
-        <p>{{ data[6].name }}
-            <br>
-         
-        <p>{{ data[7].name }}
-           
-        <p>{{ data[8].name }}
-        <!-- Ajoutez les autres propriétés ici en fonction de vos données -->
-      </tr> 
+      <tr>
+        <td>{{ data[0].name }}</td>
+        <td>{{ data[0].type }}</td>
+        <td>{{ data[0].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[1].name }}</td>
+        <td>{{ data[1].type }} </td>
+        <td>{{ data[1].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[2].name }}</td>
+        <td>{{ data[2].type }}</td>
+        <td>{{ data[2].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[3].name }}</td>
+        <td>{{ data[3].type }}</td>
+        <td>{{ data[3].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[4].name }}</td>
+        <td>{{ data[4].type }}</td>
+        <td>{{ data[4].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[5].name }}</td>
+        <td>{{ data[5].type }}</td>
+        <td>{{ data[5].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[6].name }}</td>
+        <td>{{ data[6].type }}</td>
+        <td>{{ data[6].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[7].name }}</td>
+        <td>{{ data[7].type }}</td>
+        <td>{{ data[7].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[8].name }}</td>
+        <td>{{ data[8].type }}</td>
+        <td>{{ data[8].muscle }}</td>
+      </tr>
+      <tr>
+        <td>{{ data[9].name }}</td>
+        <td>{{ data[9].type }}</td>
+        <td>{{ data[9].muscle }}</td>
+      </tr>
     </tbody>
   </table>

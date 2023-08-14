@@ -5,15 +5,15 @@ import { ExerciseService } from '../services/exercise.service';
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
+  
 constructor( private key: ExerciseService){
   
 }
 
 intercept(
-  request: HttpRequest<unknown>,
+  request: HttpRequest<any>,
   next: HttpHandler
-): Observable<HttpEvent<unknown>> {
-  
+): Observable<HttpEvent<any>> {
   const apiKey = 'UI0jPjromh92QjSVRlL46Q==HETRuxW0bfkuPOiE';
   const cloneReq = request.clone({
     headers: request.headers.set('X-Api-Key', apiKey),
