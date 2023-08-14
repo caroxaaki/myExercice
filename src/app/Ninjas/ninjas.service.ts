@@ -9,6 +9,6 @@ export class NinjaService {
   getNinjas(): Observable<any> {
     // Appel à votre API ou logique pour récupérer les ninjas
     // Retournez l'observable contenant les données des ninjas
-    return this.http.get<any>('votre-url-api/ninjas');
+    return this.http.get<any>('https://api.api-ninjas.com/v1/exercises?muscle=biceps');
   }
 }
