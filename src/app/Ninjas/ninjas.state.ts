@@ -1,5 +1,5 @@
 import { State, Action, StateContext } from '@ngxs/store';
-import { Injectable, Inject } from '@angular/core';
+import { Injectable, Inject } from '@angular/core'
 import { Ninja } from './ninjas.model';
 import { NinjaService } from './ninjas.service';
 import { GetNinjas, SetNinjas } from './ninjas.actions';
