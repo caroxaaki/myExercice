@@ -10,13 +10,13 @@ import { AuthInterceptor } from 'src/app/interceptors/auth.interceptor';
   declarations: [],
     providers: [
       { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    ],
+    imports:[
+      CommonModule,
+      ExercicePhysiqueRoutingModule
     ]
   })
-  export class ExercisePhysiqueModule { }
 
-  imports:[
-    CommonModule,
-    ExercicePhysiqueRoutingModule
-  ]
+
 
 export class ExercicePhysiqueModule { }

@@ -1,61 +1,43 @@
-<table>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liste des Ninjas</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Liste des Ninjas</h1>
+
+  <table>
     <thead>
       <tr>
-        <th>NAME</th>
-        <th>TYPE</th>
-        <th>MUSCLE</th>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Type</th>
+        <th>Muscle</th>
+        <th>Description</th>
+        <th>Difficulté</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>{{ data[0].name }}</td>
-        <td>{{ data[0].type }}</td>
-        <td>{{ data[0].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[1].name }}</td>
-        <td>{{ data[1].type }} </td>
-        <td>{{ data[1].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[2].name }}</td>
-        <td>{{ data[2].type }}</td>
-        <td>{{ data[2].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[3].name }}</td>
-        <td>{{ data[3].type }}</td>
-        <td>{{ data[3].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[4].name }}</td>
-        <td>{{ data[4].type }}</td>
-        <td>{{ data[4].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[5].name }}</td>
-        <td>{{ data[5].type }}</td>
-        <td>{{ data[5].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[6].name }}</td>
-        <td>{{ data[6].type }}</td>
-        <td>{{ data[6].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[7].name }}</td>
-        <td>{{ data[7].type }}</td>
-        <td>{{ data[7].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[8].name }}</td>
-        <td>{{ data[8].type }}</td>
-        <td>{{ data[8].muscle }}</td>
-      </tr>
-      <tr>
-        <td>{{ data[9].name }}</td>
-        <td>{{ data[9].type }}</td>
-        <td>{{ data[9].muscle }}</td>
+      <tr *ngFor="let ninja of ninjas">
+        <td>{{ ninja.id }}</td>
+        <td>{{ ninja.name }}</td>
+        <td>{{ ninja.type }}</td>
+        <td>{{ ninja.muscle }}</td>
+        <td>{{ ninja.description }}</td>
+        <td>{{ ninja.difficult }}</td>
       </tr>
     </tbody>
   </table>
+</body>
+</html>

@@ -7,6 +7,8 @@ import { BicepsComponent } from './component/biceps/biceps.component';
 import { ExerciseService } from './services/exercise.service';
 import { ExercicePhysiqueModule } from './modules/exercise-physique/exercice-physique/exercice-physique.module';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxsModule } from '@ngxs/store';
+import { NinjasState } from './Ninjas/ninjas.state';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    
+    ExercicePhysiqueModule,
+    NgxsModule.forRoot([NinjasState]),
+
 
   ],
   providers: [
