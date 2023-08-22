@@ -9,11 +9,13 @@ import { ExercicePhysiqueModule } from './modules/exercise-physique/exercice-phy
 import { AppRoutingModule } from './app-routing.module';
 import { NgxsModule } from '@ngxs/store';
 import { NinjasState } from './Ninjas/ninjas.state';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BicepsComponent
+    BicepsComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
