@@ -1,10 +1,10 @@
 export interface Ninja {
-  id: number;
+  object: number;
   name: string;
   type: string;
   muscle: string;
-  description: string;
-  dificult : string;
+ difficulty: string;
+  instructions: string;
 }
 
 export interface NinjasStateModel {

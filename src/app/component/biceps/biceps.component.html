@@ -15,27 +15,25 @@
   </style>
 </head>
 <body>
-  <h1>Liste des Ninjas</h1>
+  <h1>NINJAS LIST</h1>
 
   <table>
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Nom</th>
+        <th>Name</th>
         <th>Type</th>
         <th>Muscle</th>
-        <th>Description</th>
-        <th>Difficulté</th>
+        <th>Difficulty</th>
+        <th>Instructions</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let ninja of ninjas">
-        <td>{{ ninja.id }}</td>
         <td>{{ ninja.name }}</td>
         <td>{{ ninja.type }}</td>
         <td>{{ ninja.muscle }}</td>
-        <td>{{ ninja.description }}</td>
-        <td>{{ ninja.difficult }}</td>
+        <td>{{ ninja.difficulty }}</td>
+        <td>{{ ninja.instructions }}</td>
       </tr>
     </tbody>
   </table>
